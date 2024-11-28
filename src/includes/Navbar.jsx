@@ -1,16 +1,18 @@
-import { Link } from "react-router-dom"
+import NavLink from "../components/NavLink"
 
 const Navbar = () => {
     return (
         <div>
             <ul className="flex gap-4 py-2 px-1 bg-zinc-200">
                 <li className="">
-                    <Link to={'/'}>Home</Link>
+                    <NavLink link={'/'} name="Home" />
                 </li>
                 <li className="">
-                    <Link to={'skills'}>Skills</Link>
+                    <NavLink link={'skills'} name="Skills" />
                 </li>
-                <li className="">Portfolio</li>
+                <li className="">
+                    <NavLink link={'portfolio'} name="Portfolio" />
+                </li>
                 <li className="">CV/Resume</li>
                 <li className="">Contact</li>
             </ul>

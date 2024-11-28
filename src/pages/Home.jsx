@@ -1,8 +1,9 @@
 
 const Home = () => {
+    const name = "enan";
     return (
         <div>
-            lorem1000
+            Hello {name}
         </div>
     )
 }
